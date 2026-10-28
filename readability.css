@@ -1,0 +1,89 @@
+/* Readability and stable controls, October 2026. */
+.opening-caption{font:600 16px/1.6 'Segoe UI',sans-serif;letter-spacing:2px;color:#3e4933}
+.opening-note{font-size:46px;line-height:1.2;color:#3c482e}
+.open-hint{font:16px/1.6 'Segoe UI',sans-serif;letter-spacing:.3px;color:#3e4933}
+.opening{padding-bottom:75px}
+#invitation .hero>.hero-content>.eyebrow{font-size:14px;line-height:1.65;letter-spacing:1.1px;color:#465236}
+#invitation .hero-overline{font:italic 25px/1.5 Georgia,'Times New Roman',serif;letter-spacing:.3px;color:#465236}
+#invitation .hero h1{font-size:64px}
+#invitation .hero-subtitle{font-size:19px;line-height:1.7;color:#414b35}
+#invitation .hero-subtitle br{display:none}
+#invitation .scroll-link{font-size:15px}
+#invitation .melody-strip{display:grid;grid-template-columns:minmax(0,1fr) 250px 24px;gap:18px;align-items:center;width:86%;padding:24px}
+#invitation .music-caption{font-size:16px;max-width:none}
+#invitation .paper-music{width:250px;min-width:0;display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;font-size:14px;transform:none}
+#invitation .music-play{width:38px;height:38px}
+#paper-music-label{min-width:0}
+#invitation .countdown-section{width:calc(100% - 80px);margin:25px auto 40px;padding:30px 24px;background:#fffdf5;border:1px solid #b4a371;box-shadow:0 7px 20px #35412520}
+#invitation .countdown-section>.eyebrow{font:600 15px/1.6 'Segoe UI',sans-serif;letter-spacing:1px;color:#3f4e31;background:none;margin:0 0 20px;padding:0}
+#invitation .countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 15px}
+#invitation .countdown div{min-width:0;padding:16px 4px;background:#edf0e3;border:1px solid #d0d6be;border-radius:3px}
+#invitation .countdown b{display:block;font:54px/1.1 Georgia,serif;font-variant-numeric:tabular-nums;color:#344528}
+#invitation .countdown small{display:block;font:600 12px/1.6 'Segoe UI',sans-serif;letter-spacing:.5px;color:#425234;background:none;margin-top:10px;padding:0}
+#invitation .dress-paper{width:94%;margin:auto}
+#invitation .rsvp-section>.rsvp-small{max-width:440px;margin:24px auto 0;padding:15px 20px;background:#fffdf5;border:1px solid #b7c09f;border-radius:3px;font:17px/1.6 'Segoe UI',sans-serif;color:#3d4d30}
+#invitation .closing .tiny{display:block;margin-top:24px;font:600 16px/1.7 'Segoe UI',sans-serif;letter-spacing:.8px;color:#3e4b31}
+#invitation>footer,#invitation>footer .text-button{font-size:14px;color:#3c4b2e}
+#invitation>footer{padding-bottom:115px}
+.floating-rsvp{position:fixed;z-index:60;left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:calc(100% - 28px);bottom:22px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:15px 24px;border:1px solid #c4ad70;background:#4b6039;color:#fffdf2;text-decoration:none;font:600 16px/1.4 'Segoe UI',sans-serif;box-shadow:0 5px 22px #20341640;border-radius:4px}
+.invitation-closed .floating-rsvp{display:none}
+.floating-rsvp:hover{background:#384d28}
+.floating-rsvp:focus-visible{outline:3px solid #c6a65e;outline-offset:4px}
+.music-button{left:22px;right:auto;bottom:22px;min-height:48px;min-width:175px;font-size:13px;justify-content:flex-start;transform:none}
+body.form-page{font-family:'Segoe UI',Arial,sans-serif}
+.form-page .form-main h1{font:500 42px/1.25 'Segoe UI',Arial,sans-serif;color:#36482c}
+.form-page .form-main h1 em{font:inherit;color:inherit}
+.form-page .form-main>.eyebrow{font:600 14px/1.7 'Segoe UI',Arial,sans-serif;color:#455537;letter-spacing:.8px}
+.form-page .form-intro{font:17px/1.7 'Segoe UI',Arial,sans-serif;color:#46543a;margin-bottom:38px}
+.form-page legend{font:600 22px/1.45 'Segoe UI',Arial,sans-serif;color:#35482a}
+.form-page legend>span{font:600 14px/1.5 'Segoe UI',Arial,sans-serif;color:#576a45}
+.form-page label,.form-page .choice{font:16px/1.6 'Segoe UI',Arial,sans-serif;color:#3f4d34}
+.form-page .field-hint,.form-page .chips span{font:15px/1.6 'Segoe UI',Arial,sans-serif;color:#46553a}
+.form-page input:not([type]),.form-page textarea{font:16px/1.6 'Segoe UI',Arial,sans-serif}
+.form-page input::placeholder,.form-page textarea::placeholder{font:14px/1.6 'Segoe UI',Arial,sans-serif;color:#65735b}
+.form-page .form-send .button,.form-page .response-panel .button{font:600 16px/1.5 'Segoe UI',Arial,sans-serif}
+.form-page .response-panel h2{font:600 30px/1.35 'Segoe UI',Arial,sans-serif;color:#35482a}
+.form-page .response-panel p{font:17px/1.8 'Segoe UI',Arial,sans-serif;color:#46543a}
+.form-page>footer{font:16px/1.7 'Segoe UI',Arial,sans-serif;color:#36492b;gap:15px}
+.form-page .form-contact{font:16px/1.7 'Segoe UI',Arial,sans-serif}
+.form-page .response-complete>h1,.form-page .response-complete>.form-intro{display:none}
+@media(max-width:760px){
+ .opening-caption{font-size:13px;letter-spacing:1.2px}
+ .opening-note{font-size:36px}
+ .open-hint{font-size:14px}
+ #invitation .hero-content{display:block}
+ #invitation .hero>.hero-content>.eyebrow{font-size:12px;margin-bottom:24px}
+ #invitation .hero-paper{margin:32px auto 0}
+ #invitation .hero h1{font-size:clamp(41px,10.4vw,64px)}
+ #invitation .hero-overline{font-size:23px}
+ #invitation .hero-subtitle{font-size:17px}
+ #invitation .melody-strip{grid-template-columns:minmax(0,1fr);width:88%;gap:12px;padding:22px 18px}
+ #invitation .music-caption{font-size:15px}
+ #invitation .paper-music{width:min(250px,100%);justify-self:center}
+ #invitation .melody-note{display:none}
+ #invitation .countdown-section{width:calc(100% - 36px);padding:24px 14px}
+ #invitation .countdown-section>.eyebrow{font-size:13px}
+ #invitation .countdown{gap:7px}
+ #invitation .countdown b{font-size:clamp(27px,7.5vw,44px)}
+ #invitation .countdown small{font-size:10px;letter-spacing:0}
+ #invitation .countdown div{padding:14px 2px}
+ #invitation .rsvp-section>.rsvp-small{font-size:16px}
+ #invitation .closing .tiny{font-size:14px}
+ .floating-rsvp{left:14px;right:14px;width:auto;transform:none;bottom:max(12px,env(safe-area-inset-bottom));min-height:54px;font-size:15px;padding:14px}
+ .music-button{left:14px;bottom:80px;min-width:160px;font-size:12px}
+ .form-page .music-button{bottom:16px}
+ .form-page .form-main h1{font-size:34px}
+ .form-page .form-main{width:90%;padding:32px 22px}
+ .form-page .form-main>.eyebrow{font-size:12px}
+ .form-page legend{font-size:20px}
+ .form-page .form-intro{font-size:16px}
+ .form-page>footer{font-size:15px}
+ .form-page .response-panel h2{font-size:27px}
+}
+
+/* One confirmation link: fixed while reading, then docked in its own slot. */
+:root{--rsvp-dock-gap:22px;--rsvp-control-height:60px}
+#invitation .rsvp-dock{height:var(--rsvp-control-height);width:100%;max-width:390px;margin:24px auto 0}
+#invitation .rsvp-dock .floating-rsvp{box-sizing:border-box;height:var(--rsvp-control-height);min-height:var(--rsvp-control-height);bottom:max(var(--rsvp-dock-gap),env(safe-area-inset-bottom,0px))}
+#invitation .rsvp-dock .floating-rsvp.is-docked{position:relative;left:auto;right:auto;bottom:auto;transform:none;width:100%;max-width:none;margin:0}
+@media(max-width:760px){:root{--rsvp-dock-gap:12px}#invitation .rsvp-dock .floating-rsvp{left:14px;right:14px;width:auto;transform:none}#invitation .rsvp-dock .floating-rsvp.is-docked{left:auto;right:auto;width:100%}}

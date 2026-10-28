@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sergey Alexandra//Wedding Invitation//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sergey-alexandra-20270708@wedding.local
+DTSTAMP:20261024T160000Z
+DTSTART:20270708T110000Z
+SUMMARY:Свадьба Сергея и Александры
+LOCATION:Мини-отель Таежный\, Клубная улица 32
+ А\, деревня Первомайка\, Московская облас
+ ть
+DESCRIPTION:Начало праздника в 14:00 по московск
+ ому времени.
+END:VEVENT
+END:VCALENDAR

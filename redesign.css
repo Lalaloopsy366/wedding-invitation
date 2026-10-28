@@ -1,0 +1,347 @@
+
+/* Botanical paper collage. The opening envelope and its animation are unchanged. */
+body:before{background:#5d6744}
+#invitation{--collage-olive:#606b46;--collage-dark:#3e482f;--collage-paper:#fffdf6;--collage-gold:#aa8b49;max-width:820px;margin:0 auto;background:#e5e3d9 url('botanical-toile.png') center top/720px auto repeat;box-shadow:0 0 70px #29311e45;color:#37402e;overflow:hidden}
+#invitation>header{position:relative;width:100%;height:82px;margin:0;padding:0 38px;gap:25px;background:#eeede3cc;border:0;border-bottom:1px solid #7c865033}
+#invitation>header .monogram{font-size:27px;letter-spacing:2px}
+#invitation>header nav{font:14px/1.5 'Segoe UI',sans-serif;gap:28px;justify-content:flex-end}
+#invitation>header nav a{color:#3e482f}
+#invitation main{padding-bottom:0}
+#invitation .section,#invitation main>.section{position:relative;max-width:none;width:100%;padding:45px 58px;margin:0;background:transparent;border:0!important}
+#invitation .eyebrow{font:11px/1.65 'Segoe UI',sans-serif;color:#60684b;letter-spacing:1.8px;margin:0 0 17px}
+#invitation h2{font:46px/1.18 Marck,'Segoe Script',cursive;margin:0 0 22px;color:#404b32}
+#invitation h3{font:28px/1.3 Georgia,serif}
+#invitation p{font-size:17px;line-height:1.85}
+#invitation .paper{position:relative;isolation:isolate;color:#414535;filter:drop-shadow(0 7px 8px #41472a18)}
+#invitation .paper:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,#fffdf7,#fcfaf2 55%,#f4f0e6);clip-path:polygon(0.8% 0.7%,8% 0.1%,14% 0.9%,22% 0%,33% 0.8%,40% 0.1%,47% 0.7%,58% 0%,64% 0.6%,75% 0%,83% 0.7%,93% 0.1%,99% 0.7%,99.7% 7%,99.2% 17%,100% 28%,99.4% 39%,100% 51%,99.3% 62%,99.9% 75%,99.2% 86%,99.7% 99%,92% 99.8%,82% 99.1%,72% 100%,60% 99.4%,49% 99.9%,41% 99.2%,32% 100%,24% 99.4%,16% 100%,7% 99.3%,0.4% 99.8%,0.9% 90%,0% 79%,0.6% 70%,0% 59%,0.8% 50%,0.1% 39%,0.7% 27%,0% 15%);box-shadow:inset 0 0 32px #bead7e18}
+#invitation .hero{display:block;height:auto;min-height:0;max-height:none;width:100%;padding:42px 35px 25px;margin:0;overflow:visible;background:transparent}
+#invitation .hero-content{display:block;max-width:650px;width:100%;height:auto;min-height:0;aspect-ratio:auto;padding:0;margin:auto;background:none;box-shadow:none;transform:none;text-align:center}
+#invitation .hero-content:after{display:none}
+#invitation .hero>.hero-content>.eyebrow{display:inline-block;padding:7px 12px;background:#f8f5e9dd;margin:0 0 24px;font-size:10px;letter-spacing:1.6px}
+#invitation .portrait-collage{position:relative;height:330px;width:380px;max-width:90%;margin:0 auto;isolation:isolate}
+#invitation .portrait-frame{position:absolute;inset:0 34px 0 34px;border-radius:160px 160px 3px 3px;border:7px solid #f8f5e9;outline:1px solid #ac9459;overflow:hidden;margin:0;background:#7a8355;box-shadow:0 12px 20px #38412830}
+#invitation .portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center 57%;display:block}
+#invitation .book-fragment{position:absolute;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0 8px,#8e896433 8px 9px,transparent 9px 11px),#eae4ce;border:1px solid #b8b08d55;box-shadow:0 5px 12px #4c4b3520}
+#invitation .portrait-collage .book-fragment{width:75%;height:88%;left:0;top:20px;transform:rotate(-8deg)}
+#invitation .wax-stamp,#invitation .small-seal{display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#d9c17a,#ad873e 60%,#d1b26b 70%,#98722d);border:3px double #dfc985;border-radius:47% 50% 45% 48%;color:#f4e9c5;font:italic 15px Georgia,serif;box-shadow:2px 5px 7px #3a361b38;outline:1px solid #a3813d}
+#invitation .wax-stamp{position:absolute;bottom:-23px;left:calc(50% - 29px);height:58px;width:58px;z-index:3;transform:rotate(-8deg)}
+#invitation .pressed-leaf{display:block;position:absolute;width:45px;height:95px;background:linear-gradient(100deg,#6b743b,#9c9c5a 47%,#c1b66e 49%,#7b8142 52%,#646d37);clip-path:ellipse(36% 49% at 50% 50%);filter:drop-shadow(2px 5px 2px #3a411a33);z-index:3;pointer-events:none}
+#invitation .pressed-leaf:after{content:"";position:absolute;inset:15% 14%;background:repeating-linear-gradient(28deg,transparent 0 8px,#d0c27c66 8px 9px,transparent 9px 17px)}
+#invitation .leaf-one{right:7px;top:210px;transform:rotate(38deg)}
+#invitation .hero-paper{width:min(540px,100%);padding:39px 45px 31px;margin:13px auto 0;z-index:1}
+#invitation .hero-overline{font:11px 'Segoe UI',sans-serif;letter-spacing:2px;margin:0 0 19px;color:#60684b}
+#invitation .hero h1{font:74px/.95 Marck,'Segoe Script',cursive;letter-spacing:-1px;color:#3c462f;margin:0}
+#invitation .hero .amp{font:italic 29px/1 Georgia,serif;color:#927748;margin:13px 0}
+#invitation .amp:before,#invitation .amp:after{width:35px;margin:0 15px;background:#b8a478}
+#invitation .hero-subtitle{font:16px/1.7 Georgia,serif;margin:24px 0 18px;max-width:none;color:#5f644e}
+#invitation .hero-date{gap:17px;justify-content:center;margin:0}
+#invitation .hero-date span{font-size:26px;letter-spacing:2px}
+#invitation .hero-date i{font-size:20px}
+#invitation .scroll-link{font-size:12px;margin:22px 0 0;color:#414d31}
+#invitation .scroll-link span{font-size:25px;margin-top:5px}
+#invitation .melody-strip{display:flex;align-items:center;justify-content:space-between;gap:18px;width:78%;margin:13px auto 25px;padding:23px 30px;text-align:center}
+#invitation .music-caption{font:italic 14px/1.7 Georgia,serif;color:#63694f;max-width:150px}
+#invitation .paper-music{display:flex;gap:13px;align-items:center;border:0;background:none;color:#414c30;padding:8px 3px;font:12px/1.6 'Segoe UI',sans-serif;text-align:left}
+#invitation .music-play{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#687349;color:#fff9e7;font-size:14px;flex-shrink:0}
+#invitation .melody-note{font-size:24px;color:#8e8c60}
+#invitation .welcome{padding-top:48px;padding-bottom:50px;text-align:center}
+#invitation .welcome-paper{width:88%;margin:0 auto;padding:47px 45px 42px}
+#invitation .welcome .lead{font-size:22px;line-height:1.55}
+#invitation .welcome-paper>p:not(.eyebrow){color:#505542}
+#invitation .paper-signature{margin:26px 0 0;font-style:italic;font-size:14px}
+#invitation .paper-signature span{font:31px/1.5 Marck,cursive;color:#626e46}
+#invitation .leaf-two{top:19px;left:67px;transform:rotate(-44deg);height:87px}
+#invitation .postmark{position:absolute;right:34px;bottom:15px;width:97px;height:97px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font:8px/1.8 'Segoe UI',sans-serif;letter-spacing:1px;color:#65704c;border:1px solid #7a835c;outline:1px solid #7a835c;outline-offset:-6px;border-radius:50%;transform:rotate(-14deg);background:#eeecdd}
+#invitation .postmark b{font-size:9px;margin-top:3px;font-weight:400}
+#invitation .date-collage{padding-top:30px;padding-bottom:34px;text-align:center}
+#invitation .calendar-paper{width:77%;margin:auto;padding:40px 45px 35px}
+#invitation .calendar-paper>.eyebrow{font-size:10px}
+#invitation .tearoff-date{display:flex;justify-content:center;align-items:center;gap:21px;border-block:1px solid #b5b29477;padding:15px 0;margin:20px 0 23px}
+#invitation .tearoff-date>span{font:10px/1.7 Georgia,serif;letter-spacing:1.5px}
+#invitation .tearoff-date>strong{font:83px/1 Georgia,serif;font-weight:400;color:#56633c}
+#invitation .calendar{background:none;border:0;outline:0;box-shadow:none;border-radius:0;padding:0;margin:0 auto 22px;max-width:315px}
+#invitation .calendar:before{display:none}
+#invitation .calendar-heading{font:29px Marck,cursive;margin:0 0 17px;color:#5f6945}
+#invitation .calendar-heading span{font:12px Georgia,serif;border:0;padding:0}
+#invitation .weekdays{font:10px/1.6 'Segoe UI',sans-serif;color:#73795f;gap:8px;margin-bottom:9px}
+#invitation .calendar-days{gap:8px}
+#invitation .calendar-days span{font-size:17px}
+#invitation .calendar-days .wedding-day{background:#68774c;color:#fffdf0;box-shadow:0 0 0 2px #fffdf6,0 0 0 3px #ad9151;border-color:#ac8c48}
+#invitation .calendar-days .wedding-day:after{color:#9d7e42;top:-13px;right:-8px;font-size:23px}
+#invitation .save-date{font-size:13px;color:#626a48;border-color:#b5a77f}
+#invitation .small-seal{position:absolute;width:52px;height:52px;bottom:25px;right:70px;z-index:3;font-size:23px;transform:rotate(12deg)}
+#invitation .countdown-section{text-align:center;padding-top:22px;padding-bottom:20px}
+#invitation .countdown-section>.eyebrow{background:#eeecdfcc;display:inline-block;padding:7px 14px;margin-bottom:10px}
+#invitation .countdown{gap:25px;margin:9px 0 15px}
+#invitation .countdown b{font-size:43px;color:#424b33}
+#invitation .countdown small{font:10px/1.7 'Segoe UI',sans-serif;letter-spacing:1px;background:#f4f0e2ad;padding:2px 4px;color:#4b5839}
+#invitation .flourish{font-size:26px;color:#7b8258;display:block}
+#invitation .place{text-align:center;padding-top:43px;padding-bottom:62px}
+#invitation .venue-underlay{inset:62px 79px 44px 75px;z-index:0;transform:rotate(6deg)}
+#invitation .venue-green{position:relative;z-index:1;width:87%;margin:0 auto;padding:36px 25px 35px;color:#f7f4e8;background:#64704a;box-shadow:7px 10px 16px #3b43282d;border:1px solid #7f8963;outline:1px solid #bac09b;outline-offset:-9px}
+#invitation .venue-green .eyebrow{color:#eeeedb;font-size:10px;margin-bottom:15px}
+#invitation .venue-mark{display:block;font-size:35px;line-height:1;color:#e4d7ad;margin:9px 0 15px}
+#invitation .venue-green h2{color:#fffdf1;font-size:57px;margin:0 0 7px}
+#invitation .place-type{font-style:italic;color:#e6e7d6;font-size:17px;margin:0 0 23px}
+#invitation .venue-time-line{display:flex;align-items:center;justify-content:center;gap:20px;padding-top:21px;border-top:1px solid #d9dbbd55;margin:0 auto;max-width:320px}
+#invitation .venue-time-line strong{font:38px/1.2 Georgia,serif;font-weight:400;color:#fff9e5}
+#invitation .venue-time-line span{font:12px/1.7 'Segoe UI',sans-serif;color:#f0f0df;text-align:left}
+#invitation .address-paper{position:relative;z-index:2;width:79%;margin:-1px auto 0;padding:29px 30px 32px}
+#invitation .address-paper>.eyebrow{font-size:10px}
+#invitation .address-paper address{font:15px/1.9 Georgia,serif;margin:0 0 21px;color:#4e5840}
+#invitation .button{background:#64734b;border:1px solid #52613c;color:#fffdf2;font-size:14px;padding:13px 25px;border-radius:1px;gap:18px;line-height:1.5}
+#invitation .button:hover{background:#4c5c36}
+#invitation .leaf-three{bottom:39px;left:52px;transform:rotate(-38deg);height:105px}
+#invitation .details{padding-top:20px;padding-bottom:55px;text-align:center}
+#invitation .dress-paper{width:86%;margin:0 0 0 3%;padding:43px 42px 46px}
+#invitation .dress-paper .eyebrow{font-size:10px}
+#invitation .dress-paper>p:not(.eyebrow){font-size:17px}
+#invitation .swatches{margin:27px 0 15px;gap:12px}
+#invitation .swatches span{height:31px;width:31px;border:3px solid #fffdf7;outline:1px solid #b3b39455;box-shadow:0 2px 3px #55562f12}
+#invitation .dress-paper small{font-size:12px}
+#invitation .olive-roundel{position:absolute;bottom:18px;right:27px;width:115px;height:115px;border-radius:50%;background:#69754f;color:#f9f7e8;border:1px solid #a3ac84;outline:1px dashed #9ea87e;outline-offset:-8px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;box-shadow:3px 5px 9px #41482b25}
+#invitation .olive-roundel span{font:9px/1.8 'Segoe UI',sans-serif;letter-spacing:1px}
+#invitation .olive-roundel i{font-size:19px;font-style:normal;line-height:1;margin-top:5px;color:#dfd9b2}
+#invitation .gifts{padding-top:30px;padding-bottom:55px;text-align:center}
+#invitation .gifts-green{position:relative;background:#65734d;color:#f6f4e8;width:90%;margin:auto;padding:38px 44px 42px;box-shadow:7px 9px 14px #3d482926;border:1px solid #8a9472}
+#invitation .gifts-green .eyebrow{color:#f0efd8;font-size:10px}
+#invitation .gifts-green h2{color:#fffcf0;font-size:43px}
+#invitation .gifts-green p:not(.eyebrow){font-size:16px;line-height:1.85;color:#f5f3e7;margin-bottom:17px}
+#invitation .gifts-green p:last-child{margin:0}
+#invitation .gift-mark{font-size:35px;color:#e4d7ac;line-height:1.3;display:block;margin-bottom:10px}
+#invitation .gift-seal{bottom:32px;right:68px;font-size:13px}
+#invitation .rsvp-section{padding-top:10px;padding-bottom:40px;text-align:center}
+#invitation .reply-envelope{width:87%;position:relative;margin:0 auto;height:220px;overflow:hidden}
+#invitation .reply-envelope img{display:block;width:100%;height:auto;margin-top:-5%;filter:drop-shadow(0 7px 8px #3d48272b)}
+#invitation .reply-paper{width:90%;margin:-14px auto 0;padding:44px 36px 37px;z-index:2}
+#invitation .reply-paper .eyebrow{font-size:10px}
+#invitation .reply-paper h2{font-size:47px}
+#invitation .reply-paper>p:not(.eyebrow):not(.rsvp-small){font-size:17px}
+#invitation .rsvp-confirm{min-width:0;width:100%;max-width:390px;min-height:68px;background:linear-gradient(125deg,#68764f,#4b5d38);border-color:#c6b17c;font-size:16px;padding:18px 21px;gap:13px;box-shadow:inset 0 0 0 4px #5d7047,inset 0 0 0 5px #c9b77e99,0 8px 15px #3f4d2c2b}
+#invitation .rsvp-small{font-size:11px;margin:22px 0 0;color:#6a7158}
+#invitation .closing{text-align:center;padding-top:18px;padding-bottom:38px}
+#invitation .closing .signature{font:39px/1.4 Marck,cursive;margin:12px 0;color:#48563a}
+#invitation .closing p:not(.signature){font-size:15px;color:#4c583c;margin:0 0 18px;background:#efecdfba;display:inline-block;padding:4px 10px}
+#invitation .closing .tiny{display:block;font:10px/1.8 'Segoe UI',sans-serif;letter-spacing:1px;color:#52603f}
+#invitation>footer{width:100%;max-width:none;padding:25px 30px 83px;background:#edebdfb8;border-top:1px solid #89926844;gap:18px;font:11px/1.7 'Segoe UI',sans-serif;color:#4f5d3c}
+#invitation>footer .text-button{font-size:11px;color:#4f5d3c}
+body.form-page{background:#5d6744}
+body.form-page:before{left:50%;right:auto;transform:translateX(-50%);width:min(820px,100%);background:#e5e3d9 url('botanical-toile.png') center top/720px auto repeat}
+.form-page>header{width:min(690px,86%);height:84px;margin:0 auto;padding:0;background:transparent}
+.form-page>header .monogram{color:#435033;font-size:27px}
+.form-page>header .text-link{font:14px 'Segoe UI',sans-serif;color:#465438;margin:0}
+.form-page .form-main{position:relative;isolation:isolate;max-width:690px;width:86%;margin:18px auto 55px;padding:47px 45px 50px;background:#fdfbf3;border:1px solid #e2dfcb;box-shadow:7px 11px 18px #303c2330}
+.form-page .form-main:before{content:"";position:absolute;inset:-6px;z-index:-1;background:#fdfbf3;clip-path:polygon(1% 0,20% .4%,40% 0,60% .4%,80% 0,99% .5%,100% 19%,99.5% 41%,100% 59%,99.5% 82%,100% 99.5%,78% 100%,62% 99.5%,40% 100%,20% 99.5%,0 100%,.5% 80%,0 61%,.5% 40%,0 20%)}
+.form-page .form-main>.eyebrow{font:11px/1.7 'Segoe UI',sans-serif;letter-spacing:1.3px;color:#697451;margin-bottom:20px}
+.form-page .form-main h1{font:61px/1.05 Marck,cursive;color:#414e34}
+.form-page .form-main h1 em{color:#77825c}
+.form-page .form-intro{font-size:16px;line-height:1.8;color:#59624b}
+.form-page .deadline{font:12px/1.7 'Segoe UI',sans-serif;color:#65714d;margin-bottom:45px}
+.form-page fieldset{border-color:#b6ba9c80}
+.form-page legend{font:24px/1.5 Marck,cursive;color:#4b593a;margin-bottom:23px}
+.form-page legend>span{font:11px 'Segoe UI',sans-serif;color:#8a956c}
+.form-page input:not([type]),.form-page textarea{background:#fffef9;border-color:#c8ccb5;color:#424c35}
+.form-page .choice{background:#fcfbf5;border-color:#c8ccb5}
+.form-page .choice:has(input:checked){background:#e9ecdc;border-color:#75865c}
+.form-page .chips span{border-color:#c3c8af}
+.form-page .chips input:checked+span{background:#e2e8d1;border-color:#7a8c5c}
+.form-page .form-send .button,.form-page .response-panel .button{background:#65764d;border:1px solid #57673f;color:#fffdf0;border-radius:1px;padding:16px 27px;font-size:16px}
+.form-page .form-send>p:not(.privacy-note){font-size:15px;color:#59664a}
+.form-page .form-send .privacy-note{font:11px/1.8 'Segoe UI',sans-serif;color:#7b8068}
+.form-page .response-panel h2{font:44px Marck,cursive;color:#4d603c}
+.form-page>footer{width:min(690px,86%);margin:auto;padding:22px 0 85px;color:#4f5e3c;font-size:11px;border-color:#78865b55}
+@media(max-width:600px){
+#invitation{max-width:100%;background-size:520px auto}
+#invitation>header{height:74px;padding:0 23px;gap:20px}
+#invitation>header .monogram{font-size:23px}
+#invitation>header nav{font-size:13px;gap:20px;justify-content:space-between}
+#invitation .section,#invitation main>.section{padding:35px 24px}
+#invitation .hero{padding:29px 22px 20px;min-height:0}
+#invitation .hero>.hero-content>.eyebrow{font-size:8px;letter-spacing:1px;padding:7px 8px;margin-bottom:20px}
+#invitation .portrait-collage{height:285px;width:295px;max-width:93%}
+#invitation .portrait-frame{inset:0 24px;border-width:6px;border-radius:135px 135px 2px 2px}
+#invitation .wax-stamp{height:52px;width:52px;left:calc(50% - 26px);bottom:-20px;font-size:13px}
+#invitation .leaf-one{right:1px;top:185px;width:35px;height:77px}
+#invitation .hero-paper{padding:34px 22px 27px;width:100%;margin-top:12px}
+#invitation .hero-overline{font-size:10px;margin-bottom:17px}
+#invitation .hero h1{font-size:clamp(45px,12vw,65px);line-height:.96;letter-spacing:-1px}
+#invitation .hero .amp{font-size:25px;margin:12px 0}
+#invitation .hero-subtitle{font-size:14px;line-height:1.8;margin:22px 0 15px}
+#invitation .hero-date span{font-size:23px}#invitation .hero-date i{font-size:18px}
+#invitation .scroll-link{font-size:11px;margin-top:20px}
+#invitation .melody-strip{width:84%;margin:8px auto 8px;padding:19px 21px;gap:13px}
+#invitation .music-caption{font-size:12px;max-width:120px}
+#invitation .paper-music{font-size:10px;gap:9px}
+#invitation .music-play{width:31px;height:31px;font-size:12px}
+#invitation .melody-note{display:none}
+#invitation .eyebrow{font-size:10px;letter-spacing:1.3px}
+#invitation h2{font-size:39px;margin-bottom:20px}
+#invitation p{font-size:15px;line-height:1.85}
+#invitation .welcome{padding-top:38px;padding-bottom:39px}
+#invitation .welcome-paper{width:96%;padding:39px 25px 37px}
+#invitation .welcome .lead{font-size:20px;line-height:1.6}
+#invitation .welcome .lead br{display:none}
+#invitation .paper-signature{font-size:13px;margin-top:22px}
+#invitation .paper-signature span{font-size:28px}
+#invitation .leaf-two{left:17px;top:13px;height:71px;width:34px}
+#invitation .postmark{height:76px;width:76px;right:10px;bottom:2px;font-size:6px;letter-spacing:.5px}
+#invitation .postmark b{font-size:7px}
+#invitation .date-collage{padding-top:28px;padding-bottom:27px}
+#invitation .calendar-paper{width:90%;padding:34px 23px 30px}
+#invitation .calendar-paper>.eyebrow{font-size:8px;letter-spacing:1px}
+#invitation .tearoff-date{gap:17px;padding:12px 0;margin:17px 0 22px}
+#invitation .tearoff-date>strong{font-size:70px}
+#invitation .tearoff-date>span{font-size:8px;letter-spacing:1px}
+#invitation .calendar{max-width:280px;padding:0;margin-bottom:20px}
+#invitation .calendar-heading{font-size:27px}
+#invitation .weekdays{font-size:9px;gap:6px}
+#invitation .calendar-days{gap:6px}
+#invitation .calendar-days span{font-size:16px}
+#invitation .save-date{font-size:11px}
+#invitation .small-seal{width:43px;height:43px;right:29px;bottom:12px;font-size:21px}
+#invitation .countdown-section{padding-top:18px;padding-bottom:15px}
+#invitation .countdown-section>.eyebrow{font-size:9px;letter-spacing:1px}
+#invitation .countdown{gap:13px}
+#invitation .countdown b{font-size:32px}
+#invitation .countdown small{font-size:8px;letter-spacing:.7px}
+#invitation .place{padding-top:33px;padding-bottom:43px}
+#invitation .venue-underlay{inset:54px 36px 32px 35px;transform:rotate(5deg)}
+#invitation .venue-green{width:94%;padding:33px 21px 31px}
+#invitation .venue-green .eyebrow{font-size:9px;letter-spacing:1px}
+#invitation .venue-green h2{font-size:47px}
+#invitation .venue-mark{font-size:29px;margin:10px 0 17px}
+#invitation .place-type{font-size:15px;margin-bottom:20px}
+#invitation .venue-time-line{gap:17px;padding-top:18px}
+#invitation .venue-time-line strong{font-size:33px}
+#invitation .venue-time-line span{font-size:10px}
+#invitation .address-paper{width:88%;padding:27px 19px 28px}
+#invitation .address-paper>.eyebrow{font-size:8px;letter-spacing:1px}
+#invitation .address-paper address{font-size:13px;line-height:1.9}
+#invitation .button{font-size:13px;padding:13px 23px}
+#invitation .leaf-three{left:9px;bottom:23px;height:78px;width:35px}
+#invitation .details{padding-top:22px;padding-bottom:45px}
+#invitation .dress-paper{width:96%;margin:0;padding:37px 26px 46px}
+#invitation .dress-paper .eyebrow{font-size:9px}
+#invitation .dress-paper>p:not(.eyebrow){font-size:15px}
+#invitation .swatches span{width:28px;height:28px}
+#invitation .dress-paper small{font-size:10px}
+#invitation .olive-roundel{width:87px;height:87px;right:10px;bottom:4px;outline-offset:-6px}
+#invitation .olive-roundel span{font-size:7px;letter-spacing:.5px}
+#invitation .olive-roundel i{font-size:16px}
+#invitation .gifts{padding-top:27px;padding-bottom:45px}
+#invitation .gifts-green{width:97%;padding:34px 25px 38px}
+#invitation .gifts-green .eyebrow{font-size:9px;letter-spacing:1px}
+#invitation .gifts-green h2{font-size:35px}
+#invitation .gifts-green p:not(.eyebrow){font-size:14px}
+#invitation .gift-mark{font-size:31px}
+#invitation .gift-seal{right:25px;bottom:23px;font-size:11px}
+#invitation .rsvp-section{padding-top:10px;padding-bottom:26px}
+#invitation .reply-envelope{width:100%;height:150px}
+#invitation .reply-paper{width:98%;padding:36px 22px 31px;margin-top:-10px}
+#invitation .reply-paper .eyebrow{font-size:8px;letter-spacing:1px}
+#invitation .reply-paper h2{font-size:37px}
+#invitation .reply-paper>p:not(.eyebrow):not(.rsvp-small){font-size:15px}
+#invitation .rsvp-confirm{font-size:14px;min-height:66px;padding:16px 15px;gap:10px}
+#invitation .rsvp-confirm .cta-check{width:23px;height:23px;font-size:13px}
+#invitation .rsvp-confirm .cta-arrow{font-size:17px}
+#invitation .rsvp-small{font-size:10px;margin-top:20px;line-height:1.8}
+#invitation .closing{padding-top:16px;padding-bottom:30px}
+#invitation .closing .signature{font-size:31px}
+#invitation .closing p:not(.signature){font-size:13px}
+#invitation .closing .tiny{font-size:8px;letter-spacing:.7px}
+#invitation>footer{padding:24px 23px 80px;font-size:10px;gap:15px;flex-wrap:wrap;justify-content:center}
+#invitation>footer .text-button{font-size:10px}
+body.form-page:before{background-size:520px auto}
+.form-page>header{width:85%;height:76px}
+.form-page>header .monogram{font-size:24px}
+.form-page>header .text-link{font-size:12px}
+.form-page .form-main{width:85%;margin:15px auto 45px;padding:36px 24px 39px}
+.form-page .form-main>.eyebrow{font-size:9px;letter-spacing:1px}
+.form-page .form-main h1{font-size:48px}
+.form-page .form-intro{font-size:14px}
+.form-page .deadline{font-size:10px;line-height:1.8;margin-bottom:35px}
+.form-page legend{font-size:22px}
+.form-page legend>span{font-size:10px}
+.form-page label,.form-page .field-hint{font-size:13px}
+.form-page .choice{font-size:14px;padding:13px}
+.form-page .chips span{font-size:12px;padding:7px 12px}
+.form-page .form-send .button,.form-page .response-panel .button{font-size:14px;padding:15px 21px}
+.form-page .form-send>p:not(.privacy-note){font-size:13px}
+.form-page .form-send .privacy-note{font-size:10px}
+.form-page .response-panel h2{font-size:38px}
+.form-page .response-panel p{font-size:14px}
+.form-page>footer{width:85%;font-size:10px}
+}
+
+@media(max-width:600px){#invitation .hero>.hero-content>.eyebrow,#invitation .calendar-paper>.eyebrow,#invitation .address-paper>.eyebrow,#invitation .reply-paper .eyebrow{font-size:10px;letter-spacing:.7px}.form-page .form-main>.eyebrow{font-size:10px}}
+
+/* Complete first sheet and real botanical cutouts. Opening envelope stays unchanged. */
+#invitation .hero{padding:36px 32px 30px}
+#invitation .hero-content{position:relative;isolation:isolate;display:grid;grid-template-columns:240px minmax(0,1fr);align-items:center;column-gap:29px;row-gap:22px;max-width:720px;width:100%;padding:36px 32px 28px;background:linear-gradient(105deg,#fffdf7,#fcfaf1);border:1px solid #d3cbb0;border-radius:3px;box-shadow:0 9px 18px #3b442722;overflow:visible}
+#invitation .hero-content:after{content:"";display:block;position:absolute;inset:10px;border:1px solid #b8a36f55;z-index:-1;pointer-events:none}
+#invitation .hero>.hero-content>.eyebrow{grid-column:1/-1;margin:0;background:none;padding:0;font-size:11px;letter-spacing:1.4px}
+#invitation .portrait-collage{height:340px;width:240px;max-width:100%;margin:0 auto}
+#invitation .portrait-frame{inset:0;border-width:6px;border-radius:130px 130px 3px 3px}
+#invitation .portrait-frame img{object-fit:cover;object-position:center}
+#invitation .portrait-collage .book-fragment{width:90%;height:87%;left:-13px;top:25px;transform:rotate(-5deg)}
+#invitation .hero-paper{margin:0;width:100%;padding:0;background:none;filter:none;z-index:1}
+#invitation .hero-paper:before{display:none}
+#invitation .hero h1{font-size:58px;line-height:1.02;letter-spacing:-1px}
+#invitation .hero-overline{font-size:10px;margin:0 0 24px}
+#invitation .hero .amp{font-size:25px;margin:14px 0}
+#invitation .hero .amp:before,#invitation .hero .amp:after{width:25px;margin:0 12px}
+#invitation .hero-subtitle{font-size:15px;line-height:1.8;margin:24px 0 22px}
+#invitation .hero-date{gap:12px}
+#invitation .hero-date span{font-size:22px;letter-spacing:1px}
+#invitation .hero-date i{font-size:18px}
+#invitation .scroll-link{grid-column:1/-1;margin:8px 0 0;font-size:12px}
+#invitation .pressed-leaf{width:95px;height:140px;background:url('olive-twig.png') center/contain no-repeat;clip-path:none;filter:drop-shadow(2px 4px 3px #3b45202b)}
+#invitation .pressed-leaf:after{display:none}
+#invitation .leaf-one{width:82px;height:126px;right:-20px;top:230px;transform:rotate(17deg)}
+#invitation .leaf-two{width:90px;height:138px;top:8px;left:41px;transform:rotate(-32deg)}
+#invitation .leaf-three{width:105px;height:158px;left:23px;bottom:28px;transform:rotate(-25deg)}
+@media(max-width:600px){
+#invitation .hero{padding:24px 18px 25px}
+#invitation .hero-content{display:block;padding:26px 22px 24px;border-radius:2px}
+#invitation .hero-content:after{inset:8px}
+#invitation .hero>.hero-content>.eyebrow{font-size:9px;letter-spacing:1px;line-height:1.7;margin:0 0 22px;display:block}
+#invitation .portrait-collage{height:250px;width:195px;max-width:85%;margin:0 auto}
+#invitation .portrait-frame{inset:0;border-width:5px;border-radius:110px 110px 2px 2px}
+#invitation .wax-stamp{height:45px;width:45px;left:calc(50% - 22px);bottom:-16px;font-size:12px}
+#invitation .hero-paper{width:100%;margin:32px 0 0;padding:0}
+#invitation .hero-overline{font-size:9px;margin-bottom:19px}
+#invitation .hero h1{font-size:clamp(41px,11.4vw,58px);line-height:1;letter-spacing:-1px}
+#invitation .hero .amp{font-size:23px;margin:12px 0}
+#invitation .hero-subtitle{font-size:14px;line-height:1.8;margin:20px 0 16px}
+#invitation .hero-date span{font-size:22px}#invitation .hero-date i{font-size:17px}
+#invitation .scroll-link{font-size:10px;margin-top:23px}
+#invitation .pressed-leaf{width:75px;height:112px}
+#invitation .leaf-one{width:68px;height:105px;right:-29px;top:169px;transform:rotate(20deg)}
+#invitation .leaf-two{left:3px;top:6px;width:71px;height:113px}
+#invitation .leaf-three{left:0;bottom:13px;width:79px;height:122px}
+}
+
+
+/* A real opened envelope with the letter tucked behind its front pocket. */
+#invitation .rsvp-section{padding:35px 40px 35px;text-align:center}
+#invitation .reply-open-scene{position:relative;isolation:isolate;width:100%;max-width:700px;margin:0 auto;padding:0 0 215px}
+#invitation .reply-open-scene .reply-paper{position:relative;z-index:2;width:72%;margin:0 auto;padding:36px 30px 80px}
+#invitation .reply-open-scene .reply-paper .eyebrow{font-size:10px}
+#invitation .reply-open-scene .reply-paper h2{font-size:44px}
+#invitation .reply-open-scene .reply-paper>p:not(.eyebrow){font-size:16px;line-height:1.85;margin-bottom:0}
+#invitation .open-envelope-back,#invitation .open-envelope-front{position:absolute;bottom:0;left:0;width:100%;aspect-ratio:3/2;pointer-events:none}
+#invitation .open-envelope-back{z-index:1;filter:drop-shadow(0 6px 9px #3c482831)}
+#invitation .open-envelope-front{z-index:3;clip-path:polygon(0 43%,100% 43%,100% 100%,0 100%)}
+#invitation .open-envelope-back img,#invitation .open-envelope-front img{display:block;width:100%;height:auto}
+#invitation .rsvp-section>.rsvp-confirm{position:relative;z-index:4;margin:18px auto 0;width:100%;max-width:400px}
+#invitation .rsvp-section>.rsvp-small{margin-top:20px}
+@media(max-width:600px){
+#invitation .rsvp-section{padding:28px 18px 30px}
+#invitation .reply-open-scene{padding-bottom:110px}
+#invitation .reply-open-scene .reply-paper{width:80%;padding:29px 19px 65px}
+#invitation .reply-open-scene .reply-paper .eyebrow{font-size:9px;letter-spacing:.6px}
+#invitation .reply-open-scene .reply-paper h2{font-size:35px}
+#invitation .reply-open-scene .reply-paper>p:not(.eyebrow){font-size:14px;line-height:1.85}
+#invitation .rsvp-section>.rsvp-confirm{max-width:94%;margin-top:17px}
+}
+
