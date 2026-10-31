@@ -27,7 +27,7 @@ function reveal(animate=true){
 if(opening){
  $('#envelope').addEventListener('click',()=>reveal());
  if(location.hash) reveal(false);
- $('#replay').addEventListener('click',()=>{
+ $('#replay')?.addEventListener('click',()=>{
   window.scrollTo({top:0,behavior:'instant'});opening.classList.remove('finished','opened');
   $('#butterflies').replaceChildren();$('#envelope').disabled=false;
   invitation.inert=true;document.body.classList.add('invitation-closed');
@@ -124,6 +124,7 @@ $('#music')?.addEventListener('click',async()=>{
  }catch{$('#music-label').textContent='Музыка недоступна';}
 });
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)stopMusic();});
+
 
 
 
