@@ -1,7 +1,7 @@
 
 /* Botanical paper collage. The opening envelope and its animation are unchanged. */
 body:before{background:#5d6744}
-#invitation{--collage-olive:#606b46;--collage-dark:#3e482f;--collage-paper:#fffdf6;--collage-gold:#aa8b49;max-width:820px;margin:0 auto;background:#e5e3d9 url('botanical-toile.png') center top/720px auto repeat;box-shadow:0 0 70px #29311e45;color:#37402e;overflow:hidden}
+#invitation{--collage-olive:#606b46;--collage-dark:#3e482f;--collage-paper:#fffdf6;--collage-gold:#aa8b49;max-width:820px;margin:0 auto;background:#e5e3d9 url('botanical-toile.webp') center top/720px auto repeat;box-shadow:0 0 70px #29311e45;color:#37402e;overflow:hidden}
 #invitation>header{position:relative;width:100%;height:82px;margin:0;padding:0 38px;gap:25px;background:#eeede3cc;border:0;border-bottom:1px solid #7c865033}
 #invitation>header .monogram{font-size:27px;letter-spacing:2px}
 #invitation>header nav{font:14px/1.5 'Segoe UI',sans-serif;gap:28px;justify-content:flex-end}
@@ -126,7 +126,7 @@ body:before{background:#5d6744}
 #invitation>footer{width:100%;max-width:none;padding:25px 30px 83px;background:#edebdfb8;border-top:1px solid #89926844;gap:18px;font:11px/1.7 'Segoe UI',sans-serif;color:#4f5d3c}
 #invitation>footer .text-button{font-size:11px;color:#4f5d3c}
 body.form-page{background:#5d6744}
-body.form-page:before{left:50%;right:auto;transform:translateX(-50%);width:min(820px,100%);background:#e5e3d9 url('botanical-toile.png') center top/720px auto repeat}
+body.form-page:before{left:50%;right:auto;transform:translateX(-50%);width:min(820px,100%);background:#e5e3d9 url('botanical-toile.webp') center top/720px auto repeat}
 .form-page>header{width:min(690px,86%);height:84px;margin:0 auto;padding:0;background:transparent}
 .form-page>header .monogram{color:#435033;font-size:27px}
 .form-page>header .text-link{font:14px 'Segoe UI',sans-serif;color:#465438;margin:0}
@@ -295,7 +295,7 @@ body.form-page:before{background-size:520px auto}
 #invitation .hero-date span{font-size:22px;letter-spacing:1px}
 #invitation .hero-date i{font-size:18px}
 #invitation .scroll-link{grid-column:1/-1;margin:8px 0 0;font-size:12px}
-#invitation .pressed-leaf{width:95px;height:140px;background:url('olive-twig.png') center/contain no-repeat;clip-path:none;filter:drop-shadow(2px 4px 3px #3b45202b)}
+#invitation .pressed-leaf{width:95px;height:140px;background:url('olive-twig.webp') center/contain no-repeat;clip-path:none;filter:drop-shadow(2px 4px 3px #3b45202b)}
 #invitation .pressed-leaf:after{display:none}
 #invitation .leaf-one{width:82px;height:126px;right:-20px;top:230px;transform:rotate(17deg)}
 #invitation .leaf-two{width:90px;height:138px;top:8px;left:41px;transform:rotate(-32deg)}
