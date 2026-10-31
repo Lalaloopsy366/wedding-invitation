@@ -1,0 +1,10 @@
+[build]
+  command = "node prepare-api.cjs"
+  publish = "netlify-api/public"
+  functions = "netlify-api/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
