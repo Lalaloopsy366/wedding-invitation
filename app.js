@@ -81,10 +81,10 @@ if(form){
   const button=form.querySelector('button[type=submit]'),original=button.innerHTML;
   sending=true;button.disabled=true;button.textContent='Отправляем…';errorMessage.hidden=true;
   try{
-   const sessionResponse=await fetch('https://alexandra-sergey-080727.fornization.chatgpt.site/api/external-rsvp-session',{credentials:'omit',signal:AbortSignal.timeout(12000)});
+   const sessionResponse=await fetch('https://script.google.com/macros/s/AKfycbx2i-1nx0a82ULIsCJ0WQY3wIzKUVdrsmPZZ-iJHTUSd753BoexJqvXPnrFbP163cvX/exec?action=session',{credentials:'omit',signal:AbortSignal.timeout(30000)});
    const session=await sessionResponse.json();
    if(!sessionResponse.ok||!session.ok)throw Error('Отправка временно недоступна. Попробуйте позже или напишите Александре.');
-   const response=await fetch('https://alexandra-sergey-080727.fornization.chatgpt.site/api/external-rsvp',{method:'POST',credentials:'omit',headers:{'Content-Type':'application/json','X-RSVP-Token':session.token},body:JSON.stringify(payload),signal:AbortSignal.timeout(20000)});
+   const response=await fetch('https://script.google.com/macros/s/AKfycbx2i-1nx0a82ULIsCJ0WQY3wIzKUVdrsmPZZ-iJHTUSd753BoexJqvXPnrFbP163cvX/exec',{method:'POST',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({sessionToken:session.token,payload}),signal:AbortSignal.timeout(60000)});
    let result;try{result=await response.json();}catch{throw Error('Не удалось отправить ответ. Попробуйте ещё раз или напишите Александре.');}
    if(!response.ok||result.ok!==true)throw Error(result.error||'Не удалось отправить ответ. Попробуйте ещё раз.');
    form.hidden=true;const panel=$('#response-panel');panel.hidden=false;
@@ -92,7 +92,7 @@ if(form){
    panel.innerHTML='<h2>Спасибо за ваш ответ!</h2><p>Сергей и Александра получили вашу анкету.<br>До встречи в наш особенный день!</p><a class="button" href="index.html#home">Вернуться к приглашению ↗</a>';
    panel.scrollIntoView({behavior:reduced?'instant':'smooth',block:'start'});
   }catch(error){
-   errorMessage.textContent=error.name==='TimeoutError'?'Ответ отправляется дольше обычного. Попробуйте ещё раз или напишите Александре.':error.message;errorMessage.hidden=false;errorMessage.scrollIntoView({behavior:reduced?'instant':'smooth',block:'center'});
+   errorMessage.textContent=error.name==='TimeoutError'?'Ответ отправляется дольше обычного. Попробуйте ещё раз или напишите Александре.':(error instanceof TypeError?'Не удалось связаться с отправкой анкет. Проверьте соединение и попробуйте ещё раз.':error.message);errorMessage.hidden=false;errorMessage.scrollIntoView({behavior:reduced?'instant':'smooth',block:'center'});
   }finally{sending=false;button.disabled=false;button.innerHTML=original;}
  });
  form.elements.name.addEventListener('input',()=>form.elements.name.setCustomValidity(''));
@@ -124,6 +124,7 @@ $('#music')?.addEventListener('click',async()=>{
  }catch{$('#music-label').textContent='Музыка недоступна';}
 });
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)stopMusic();});
+
 
 
 
